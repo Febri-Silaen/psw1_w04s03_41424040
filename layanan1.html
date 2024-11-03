@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Pariwisata</title>
+    <link rel="stylesheet" href="layanan1.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Layanan Pariwisata</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Layanan Kami</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <div class="service" onclick="showAlert('Paket Wisata Alam')">
+            <h3>Paket Wisata Alam</h3>
+            <p>Jelajahi keindahan alam dengan paket wisata yang kami tawarkan.</p>
+        </div>
+        <div class="service" onclick="showAlert('Paket Wisata Budaya')">
+            <h3>Paket Wisata Budaya</h3>
+            <p>Pelajari budaya lokal melalui pengalaman yang mendalam.</p>
+        </div>
+        <div class="service" onclick="showAlert('Paket Wisata Kuliner')">
+            <h3>Paket Wisata Kuliner</h3>
+            <p>Cicipi berbagai hidangan lezat dari daerah setempat.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah penyedia layanan pariwisata yang berkomitmen untuk memberikan pengalaman terbaik bagi pengunjung.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form" onsubmit="return submitForm()">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    
+    <div class="back-btn">
+        <a href="index.html" class="btn back-btn">Back</a>
+    <script src="layanan1.js"></script>
+</body>
+</html>
